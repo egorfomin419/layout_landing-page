@@ -1,0 +1,32 @@
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex-shrink: 0;
+
+  @include hover(transform, scale(1.1));
+
+  @include ontablet {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--phone {
+    background-image: url(../../images/Icons/Icon-Phone-call.svg);
+  }
+
+  &--menu {
+    background-image: url(/src/images/Icons/menu.svg);
+  }
+
+  &--close {
+    background-image: url(/src/images/Icons/close.svg);
+  }
+}
+
+.phone-dropdown__button {
+  background-image: url(/src/images/Icons/phone.svg);
+}

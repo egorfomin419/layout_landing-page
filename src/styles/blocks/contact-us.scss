@@ -3,6 +3,7 @@
   &__content {
     display: grid;
     gap: 48px;
+
     @include ontablet {
       grid-template-columns: 1fr 1fr;
       gap: 24px;
@@ -13,6 +14,7 @@
   &__info {
     display: grid;
     gap: 48px;
+
     @include ondesktop {
       grid-template-columns: 1fr 1fr;
       gap: 24px;
@@ -71,15 +73,17 @@
     line-height: 20px;
   }
 
+  &__input {
+    height: 48px;
+
   &__input:focus,
   &__textarea:focus {
     outline: none;
     border-color: #d12d35;
   }
-
-  &__input {
-    height: 48px;
+  
   }
+
 
   &__textarea {
     min-height: 144px;

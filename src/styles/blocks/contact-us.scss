@@ -9,19 +9,17 @@
       gap: 24px;
       align-items: start;
     }
+
   }
 
   &__info {
     display: grid;
     gap: 48px;
-
-    @include ondesktop {
+      @include ondesktop {
       grid-template-columns: 1fr 1fr;
       gap: 24px;
-      margin-right: 111px;
-    }
   }
-
+  }
   &__block {
     display: flex;
     flex-direction: column;
@@ -59,6 +57,10 @@
   &__form {
     display: grid;
     gap: 16px;
+    align-content: start;
+    @include ondesktop {
+      width: 411px;
+    }
   }
 
   &__input,
@@ -71,19 +73,16 @@
     font-family: Roboto, sans-serif;
     font-size: 14px;
     line-height: 20px;
+
+    &:focus {
+      outline: none;
+      border-color: #d12d35;
+    }
   }
 
   &__input {
     height: 48px;
-
-  &__input:focus,
-  &__textarea:focus {
-    outline: none;
-    border-color: #d12d35;
   }
-  
-  }
-
 
   &__textarea {
     min-height: 144px;
@@ -92,22 +91,21 @@
 
   &__button {
     width: 100%;
-    max-width: 324px;
     height: 56px;
     border: 1px solid #d12d35;
     background-color: #d12d35;
-    color: white;
+    color: #fff;
+
     font-family: Cinzel, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 27px;
-    cursor: pointer;
-  }
 
-  &__button:hover {
-    background-color: #ae1c23;
-    border-color: #ae1c23;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ae1c23;
+      border-color: #ae1c23;
+    }
   }
 }
-
-

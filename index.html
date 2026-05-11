@@ -45,26 +45,21 @@
         </a>
 
         <div class="top-bar__icons ">
-          <div class="phone-dropdown">
+          <div class="phone-dropdown ">
             <button
-              class="phone-dropdown phone-dropdown__button icon--phone icon "
+              class="phone-dropdown__button icon icon--phone"
               type="button"
+              tabindex="0"
               aria-label="Phone numbers"
             ></button>
-
             <div class="phone-dropdown__list">
               <div class="phone-dropdown__item">
-                <strong>THE MET FIFTH AVENUE</strong><br>
-                <a class="phone-number" href="tel:+12125357710">
-                  +1 212-535-7710
-                </a>
+                <strong>THE MET FIFTH AVENUE</strong>
+                <a href="tel:+12125357710">+1 212-535-7710</a>
               </div>
-
               <div class="phone-dropdown__item">
-                <strong>THE MET CLOISTERS</strong><br>
-                <a class="phone-number" href="tel:+12129233700">
-                  +1 212-923-3700
-                </a>
+                <strong>THE MET CLOISTERS</strong>
+                <a href="tel:+12129233700">+1 212-923-3700</a>
               </div>
             </div>
           </div>
@@ -204,17 +199,21 @@
 
         <div class="now-on-view__list">
           <article class="exhibition">
-            <div class="exhibition__images exhibition__images--2">
-              <img
-                src="src/images/Now-on-view/first-image-small.png"
-                alt="first image"
-                class="exhibition__image exhibition__image--1"
-              >
-              <img
-                src="src/images/Now-on-view/second-image.png"
-                alt="second image"
-                class="exhibition__image"
-              >
+            <div class="exhibition__images exhibition__images--1">
+              <a href="#" class="exhibition__link exhibition__link--wide">
+                <img
+                  src="src/images/Now-on-view/first-image.png"
+                  alt="first image"
+                  class="exhibition__image"
+                >
+              </a>
+              <a href="#" class="exhibition__link exhibition__link--square">
+                <img
+                  src="src/images/Now-on-view/second-image.png"
+                  alt="second image"
+                  class="exhibition__image"
+                >
+              </a>
             </div>
 
             <div class="exhibition__content">
@@ -226,22 +225,28 @@
           </article>
 
           <article class="exhibition">
-            <div class="exhibition__images exhibition__images--3">
-              <img
-                src="src/images/Now-on-view/third-image.png"
-                alt="third image"
-                class="exhibition__image"
-              >
-              <img
-                src="src/images/Now-on-view/fourth-image.png"
-                alt="fourth image"
-                class="exhibition__image exhibition__image_none"
-              >
-              <img
-                src="src/images/Now-on-view/fifth-image.png"
-                alt="fifth image"
-                class="exhibition__image"
-              >
+            <div class="exhibition__images exhibition__images--2">
+              <a href="#" class="exhibition__link exhibition__link--square exhibition__link--3">
+                <img
+                  src="src/images/Now-on-view/third-image.png"
+                  alt="third image"
+                  class="exhibition__image"
+                >
+              </a>
+              <a href="#" class="exhibition__link exhibition__link--square exhibition__link--3">
+                <img
+                  src="src/images/Now-on-view/fourth-image.png"
+                  alt="fourth image"
+                  class="exhibition__image"
+                >
+              </a>
+              <a href="#" class="exhibition__link exhibition__link--square exhibition__link--none">
+                <img
+                  src="src/images/Now-on-view/fifth-image.png"
+                  alt="fifth image"
+                  class="exhibition__image"
+                >
+              </a>
             </div>
 
             <div class="exhibition__content">
@@ -255,17 +260,21 @@
           </article>
 
           <article class="exhibition">
-            <div class="exhibition__images exhibition__images--2">
-              <img
-                src="src/images/Now-on-view/sixth-image.png"
-                alt="sixth image"
-                class="exhibition__image"
-              >
-              <img
-                src="src/images/Now-on-view/seventh-image.png"
-                alt="seventh image"
-                class="exhibition__image"
-              >
+            <div class="exhibition__images exhibition__images--1">
+              <a href="#" class="exhibition__link exhibition__link--square">
+                <img
+                  src="src/images/Now-on-view/sixth-image.png"
+                  alt="sixth image"
+                  class="exhibition__image"
+                >
+              </a>
+              <a href="#" class="exhibition__link exhibition__link--wide">
+                <img
+                  src="src/images/Now-on-view/seventh-image.png"
+                  alt="seventh image"
+                  class="exhibition__image"
+                >
+              </a>
             </div>
 
             <div class="exhibition__content">
@@ -333,20 +342,19 @@
         <h2 class="section-title">Contact us</h2>
 
         <div class="contact-us__content">
-          <div class="contact-us__info">
 
+          <div class="contact-us__info">
             <div class="contact-us__block">
               <h3 class="contact-us__title">The Met Fifth Avenue</h3>
 
               <p class="contact-us__text">Phone</p>
-              <a
-                href="tel:+12125357710"
-                class="contact-us__phone"
-              >
+
+              <a href="tel:+12125357710" class="contact-us__phone">
                 +1 212-535-7710
               </a>
 
               <p class="contact-us__text">Address</p>
+
               <a href="#" class="contact-us__address">
                 1000 Fifth Avenue<br>
                 New York, NY 10028
@@ -357,39 +365,45 @@
               <h3 class="contact-us__title">The Met Cloisters</h3>
 
               <p class="contact-us__text">Phone</p>
-              <a
-                href="tel:+12129233700"
-                class="contact-us__phone"
-              >
+
+              <a href="tel:+12129233700" class="contact-us__phone">
                 +1 212-923-3700
               </a>
 
               <p class="contact-us__text">Address</p>
+
               <a href="#" class="contact-us__address">
                 99 Margaret Corbin Drive<br>
                 Fort Tryon Park<br>
                 New York, NY 10040
               </a>
             </div>
-
-            <form class="contact-us__form">
-              <input
-        class="contact-us__input"
-        type="text"
-        placeholder="Name"
-       >
-              <input
-        class="contact-us__input"
-        type="email"
-        placeholder="Email"
-       >
-              <textarea
-        class="contact-us__textarea"
-        placeholder="Message"
-        ></textarea>
-              <button class="contact-us__button" type="submit">Send</button>
-            </form>
           </div>
+
+          <form class="contact-us__form">
+            <input
+              class="contact-us__input"
+              type="text"
+              placeholder="Name"
+            >
+
+            <input
+              class="contact-us__input"
+              type="email"
+              placeholder="Email"
+            >
+
+            <textarea
+              class="contact-us__textarea"
+              placeholder="Message"
+            ></textarea>
+
+            <button class="contact-us__button" type="submit">
+              Send
+            </button>
+          </form>
+
+        </div>
       </section>
     </main>
 

@@ -32,14 +32,16 @@
   }
 }
 
-@mixin pageGrid {
+@mixin pagegrid {
   --columns: 2;
-  display: grid;
+
+   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
 
   @include ontablet {
-    --columns: 6;
+  --columns: 6;
+
     column-gap: 24px;
   }
 

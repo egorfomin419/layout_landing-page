@@ -15,6 +15,7 @@
   &__info {
     display: grid;
     gap: 48px;
+
       @include ondesktop {
       grid-template-columns: 1fr 1fr;
       gap: 24px;
@@ -58,6 +59,7 @@
     display: grid;
     gap: 16px;
     align-content: start;
+
     @include ondesktop {
       width: 411px;
     }
@@ -77,17 +79,21 @@
     &:focus {
       outline: none;
       border-color: #d12d35;
-    }
-  }
+       &__input {
+      height: 48px;
 
-  &__input {
-    height: 48px;
-  }
-
-  &__textarea {
+     }
+     &__textarea {
     min-height: 144px;
     resize: vertical;
   }
+    }
+
+  }
+
+
+
+
 
   &__button {
     width: 100%;
@@ -95,6 +101,8 @@
     border: 1px solid #d12d35;
     background-color: #d12d35;
     color: #fff;
+
+    @include hover(transform, scale(1.05));
 
     font-family: Cinzel, sans-serif;
     font-weight: 700;

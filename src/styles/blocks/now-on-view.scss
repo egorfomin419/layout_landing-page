@@ -3,6 +3,7 @@
   &__list {
     display: grid;
     row-gap: 40px;
+
     @include ontablet {
       row-gap: 64px;
     }
@@ -19,11 +20,12 @@
       gap: 24px;
     }
 
-    @include pageGrid;
+    @include pagegrid;
     &--2 {
-    grid-template-columns: repeat(3, 1fr);
+     grid-template-columns: repeat(3, 1fr);
+
       @include ontablet {
-      @include pageGrid;
+       @include pagegrid;
       }
    }
 
@@ -32,17 +34,19 @@
   &__link {
 
     &--wide {
-      @include ontablet {
-        grid-column: span 4;
-      }
+       @include ontablet {
+       grid-column: span 4;
+       }
+
       @include ondesktop {
         grid-column: span 8;
       }
     }
     &--square {
-      @include ontablet {
+       @include ontablet {
         grid-column: span 2;
       }
+
       @include ondesktop {
         grid-column: span 4;
       }
@@ -57,7 +61,8 @@
     &--none {
     @include ontablet {
       display: none;
-      @include ondesktop {
+
+       @include ondesktop {
         display: block;
       }
     }
@@ -96,7 +101,9 @@
 
 .card__button {
   display: block;
+
   @include hover(transform, scale(1.05));
+  
   width: 100%;
   max-width: 392px;
   height: 56px;

@@ -45,6 +45,7 @@
     background-position: center;
     background-size: contain;
     cursor: pointer;
+
     @include ontablet {
       width: 32px;
       height: 32px;
@@ -68,7 +69,9 @@
   &:focus-within &__list {
     display: block;
   }
+
 }
+
 .phone-dropdown__item strong {
   display: block;
   font-family: Cinzel, sans-serif;
@@ -76,8 +79,11 @@
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
+
   color: #fff;
+
 }
+
 .phone-dropdown__item a {
   font-family: Cinzel, sans-serif;
   font-weight: 700;

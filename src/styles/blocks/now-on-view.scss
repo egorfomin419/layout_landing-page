@@ -1,5 +1,4 @@
 .now-on-view {
-  @include hover(transform, scale(1.05));
   &__list {
     display: grid;
     row-gap: 40px;
@@ -103,7 +102,7 @@
   display: block;
 
   @include hover(transform, scale(1.05));
-  
+
   width: 100%;
   max-width: 392px;
   height: 56px;
